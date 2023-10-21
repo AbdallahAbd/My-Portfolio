@@ -207,7 +207,7 @@ button {
 }
 
 .nav_logo:hover {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color: black;
 }
 .nav_logo,
@@ -381,7 +381,7 @@ button {
 
 /* BUTTONS */
 .button {
-  display: inline-block;
+  display:inline-block;
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem;
@@ -468,6 +468,7 @@ button {
   border: none;
   background :hsl(var(--hue-color), 12%, 36%);
 background: linear-gradient(0deg, rgb(24, 118, 201) 0%, rgb(0, 247, 255) 100%);
+
 }
 .btn-5:hover {
   color: #00fffc;
@@ -664,12 +665,14 @@ background: linear-gradient(0deg, rgb(24, 118, 201) 0%, rgb(0, 247, 255) 100%);
 
 .portfolio_content {
   padding: 0 2.5rem;
+  
 }
 
 .portfolio_img {
   width: 256px;
   border-radius: 0.5rem;
   justify-self: center;
+
 }
 
 .portfolio_title {
