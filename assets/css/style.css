@@ -186,37 +186,20 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.nav_logo {
+.disappear {
   font-family: 'Space Mono', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
   color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
-
-.nav_logo:hover {
-  background-color: #81e4f3;
-  color: black;
-}
-.nav_logo {
-  font-family: 'Space Mono', monospace;
-  font-size: clamp(3rem, 10vw, 10rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
-
-.nav_logo:hover {
-  background-color: #ffffff;
-  color: black;
-}
-.nav_logo,
+.disappear,
 .nav_toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
-.nav_logo:hover {
+.disappear:hover {
   color: var(--first-color);
 }
 
@@ -224,7 +207,7 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.nav_logo
+.disappear
 {
   font-size: 2.2rem
 }
@@ -1133,4 +1116,100 @@ background: linear-gradient(0deg, rgb(24, 118, 201) 0%, rgb(0, 247, 255) 100%);
   .contact_inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.disappear{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 1cm;
+  margin-left: 2cm;
+	width: 100%;
+	bottom: 0;
+	top: 0;
+}
+.disappear span{
+	display: inline-block;
+	color: transparent;
+	text-shadow: 0px 0px 0px rgb(255, 255, 255);
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.disappear span:nth-child(1)
+{
+	animation-name: disappearleft;
+}
+
+
+.disappear span:nth-child(2)
+{
+	animation-name: disappearleft;
+	animation-delay: .3s;
+}
+
+.disappear span:nth-child(2)
+{
+	animation-name: disappearleft;
+	animation-delay: .3s;
+}
+
+.disappear span:nth-child(3)
+{
+	animation-name: disappearleft;
+	animation-delay: .6s;
+}
+
+.disappear span:nth-child(4)
+{
+	animation-name: disappearright;
+	animation-delay: .8s;
+}
+
+.disappear span:nth-child(5)
+{
+	animation-name: disappearright;
+	animation-delay: 1s;
+}
+
+.disappear span:nth-child(6)
+{
+	animation-name: disappearright;
+	animation-delay: 1.3s;
+}
+
+
+.disappear span:nth-child(7)
+{
+	animation-name: disappearleft;
+	animation-delay: 1.6s;
+}
+
+.disappear span:nth-child(8)
+{
+	animation-name: disappearright;
+	animation-delay: 2s;
+}
+
+.disappear span:nth-child(9)
+{
+	animation-name: disappearright;
+	animation-delay: 2.3s;
+}
+
+
+
+@keyframes disappearleft{
+	50%{
+		transform: skew(50deg) translateY(-200%);
+		text-shadow: 0px 0px 50px;
+		opacity: 0;
+	}
+}
+
+
+@keyframes disappearright{
+	50%{
+		transform: skew(-50deg) translateY(-200%);
+		text-shadow: 0px 0px 50px;
+		opacity: 0;
+	}
 }
