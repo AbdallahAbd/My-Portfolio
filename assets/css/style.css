@@ -189,15 +189,10 @@ button {
 .nav_logo {
   font-family: 'Space Mono', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
-  color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-.nav_logo:hover {
-  background-color: #ffffff;
-  color: black;
-}
 .nav_logo,
 .nav_toggle {
   color: var(--title-color);
